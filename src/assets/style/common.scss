@@ -1,0 +1,108 @@
+// Fontawesome
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+//Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #001313;
+}
+
+// typography
+.h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.highlighted {
+    color: rgb(255, 214, 80);
+}
+
+.light {
+    color: #fff;
+}
+
+// wrappers
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+// buttons
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    transition: 0.2s;
+    &:hover {
+        cursor: pointer;
+        color: rgb(255, 214, 80);
+        box-shadow: 0 0 0.5rem rgb(255, 214, 80);
+    }
+
+    &:disabled {
+        cursor: default;
+        background-color: #cecece;
+        color: rgb(14, 148, 108);
+        box-shadow: none;
+    }
+}
+
+.btn_primary {
+background-color: rgb(14, 148, 108);
+color: #fff;
+}
+
+.btn_submit {
+    background-color: rgb(255, 214, 80);
+    color: rgb(6, 65, 47);
+    box-shadow: 0 0 0.5rem rgb(14, 148, 108);
+    font-weight: 700;
+
+    &:hover{
+        color: rgb(6, 65, 47);
+    }
+
+    &:disabled {
+        cursor: default;
+        background-color: #cecece;
+        color: rgb(14, 148, 108);
+        box-shadow: none;
+    }
+}
+
+// links
+a{
+    text-decoration: none;
+    color: inherit;
+
+    &:visited {
+        color: inherit;
+    }
+}
+
+//lists
+ol, ul {
+    list-style: none;
+}
+
+li {
+    margin-block: 1rem;
+    font-size: 1.1rem;
+}
