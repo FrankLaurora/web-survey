@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="slide_up" :key="$store.state.current">
         <h2 class="h2 highlighted">{{$store.state.survey[$store.state.current].question}}</h2>
         <div class="answer_container" v-for="(answer, index) in $store.state.survey[$store.state.current].answers" 
             :key="index" 
